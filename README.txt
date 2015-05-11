@@ -40,7 +40,7 @@ Choose one from the <code>Tracking Code Type</code> dropdown in the plugin setti
 
 = Where can I find my Marketo API credentials? =
 
-Follow the tutorial from [WordPress](http://developers.marketo.com/blog/quick-start-guide-for-marketo-rest-api/)
+Follow the tutorial from [Marketo](http://developers.marketo.com/blog/quick-start-guide-for-marketo-rest-api/)
 
 == Screenshots ==
 
