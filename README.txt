@@ -1,7 +1,8 @@
 === mSync ===
+
 Contributors: magiclogix
 Donate link: http://magiclogix.com/
-Tags: forms, marketo, marketing
+Tags: forms, marketo, marketing automation, integration, analytics, tracking
 Requires at least: 3.0.1
 Tested up to: 4.2.1
 Stable tag: 4.3
@@ -10,9 +11,10 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 MSync makes it easy to create and embed Marketo forms in WordPress
 
+
 == Description ==
 
-Need to integrate Marketo forms with your CMS? Now, you can do precisely that. MSync allows you to create forms directly in WordPress and connect them to Marketo. These native forms are pure PHP and are very secure.
+Need to integrate Marketo forms with your CMS? Now, you can precisely do that. MSync allows you to create forms directly in WordPress and connect them to Marketo (Best-in-Class Marketing Automation Software). These native forms are pure PHP and are very secure.
 
 It’s a simple process that allows you to take advanced actions on your lead data. Perform the following processes with ease:
 
@@ -26,11 +28,21 @@ It’s a simple process that allows you to take advanced actions on your lead da
 * Embed forms into articles
 * Embed forms on pages and WordPress widget
 
+= Useful Links =
+
+* [Plugin's Homepage] (http://www.magiclogix.com/labs/)
+* [Plugin’s Support Link] (http://magiclogix.com/contact/)
+* [Developer Link] (https://launchpoint.marketo.com/magic-logix/906-marketing-automation-consulting-implementation-and-integration/)
+
 == Installation ==
 
-1. Upload <code>msync</code> to your <code>wp-content/plugins/</code> directory.
-2. Activate the plugin through the 'Plugins' menu and enable.
-3. Enter your Marketo API credentials in the plugin settings page.
+1. Go to Plugins page in WordPress
+2. Select "Add New"
+3. Select "Upload"
+4. Browse for and select “msync.zip"
+5. Click "Install"
+6. Activate plugin
+7. Enter your Marketo API credentials in the plugin settings page.
 
 == Frequently Asked Questions ==
 
