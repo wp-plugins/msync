@@ -1,0 +1,263 @@
+/* line 1, ../sass/msync-admin.scss */
+#msync-form-builder {
+  margin-right: 400px;
+}
+/* line 3, ../sass/msync-admin.scss */
+#msync-form-builder #msync-form-properties {
+  float: right;
+  margin-right: -400px;
+  width: 380px;
+}
+
+/* line 11, ../sass/msync-admin.scss */
+#marketo-formfieldsdiv .inside {
+  max-height: 500px;
+  -ms-overflow-y: scroll;
+  overflow-y: scroll;
+}
+
+/* line 18, ../sass/msync-admin.scss */
+.marketo-form-fields {
+  list-style: none;
+}
+/* line 20, ../sass/msync-admin.scss */
+.marketo-form-fields li {
+  border: 1px solid transparent;
+  cursor: move;
+}
+/* line 23, ../sass/msync-admin.scss */
+.marketo-form-fields li:hover {
+  border: 1px dotted #d54e21;
+}
+/* line 26, ../sass/msync-admin.scss */
+.marketo-form-fields li.done {
+  color: #999;
+  cursor: not-allowed;
+}
+/* line 31, ../sass/msync-admin.scss */
+.marketo-form-fields .marketo-field {
+  width: 20px;
+  height: 20px;
+  margin-right: 13px;
+  font-size: 20px;
+}
+/* line 37, ../sass/msync-admin.scss */
+.marketo-form-fields .field-string {
+  content: '';
+}
+
+/* line 42, ../sass/msync-admin.scss */
+#marketo-form-canvas {
+  margin: 40px 0;
+  display: block;
+  min-height: 500px;
+  background-color: #FFFFFF;
+  padding: 10px;
+  border: 1px solid #cccccc;
+}
+/* line 49, ../sass/msync-admin.scss */
+#marketo-form-canvas .form-canvas {
+  min-height: 300px;
+  margin-bottom: 20px;
+  border: 3px dotted #ddd;
+  background-color: #F2F2F2;
+  padding: 5px;
+}
+/* line 55, ../sass/msync-admin.scss */
+#marketo-form-canvas .form-canvas.active {
+  border: 3px dotted #d54e21;
+}
+/* line 59, ../sass/msync-admin.scss */
+#marketo-form-canvas .mkto_field {
+  border: 1px solid transparent;
+  display: block;
+  position: relative;
+  padding: 10px;
+  line-height: 32px;
+  clear: both;
+}
+/* line 66, ../sass/msync-admin.scss */
+#marketo-form-canvas .mkto_field label {
+  width: 150px;
+  float: left;
+  font-weight: bold;
+  text-align: right;
+  padding-right: 15px;
+  line-height: 18px;
+}
+/* line 74, ../sass/msync-admin.scss */
+#marketo-form-canvas .mkto_field .dummy-input {
+  border: 1px solid #ddd;
+  color: #333;
+  outline: 0 none;
+  transition: border-color 0.05s ease-in-out 0s;
+  display: inline-block;
+  background: #FFF;
+  border-color: rgba(222, 222, 222, 0.75);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04) inset;
+  color: rgba(51, 51, 51, 0.5);
+}
+/* line 84, ../sass/msync-admin.scss */
+#marketo-form-canvas .mkto_field .dummy-input.dummy-input-text, #marketo-form-canvas .mkto_field .dummy-input.dummy-input-hidden {
+  height: 40px;
+  width: 250px;
+}
+/* line 88, ../sass/msync-admin.scss */
+#marketo-form-canvas .mkto_field .dummy-input.dummy-input-textarea {
+  height: 100px;
+  width: 250px;
+}
+/* line 92, ../sass/msync-admin.scss */
+#marketo-form-canvas .mkto_field .dummy-input.dummy-input-select {
+  height: 40px;
+  width: 250px;
+  position: relative;
+}
+/* line 96, ../sass/msync-admin.scss */
+#marketo-form-canvas .mkto_field .dummy-input.dummy-input-select:after {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  content: "-- Select --";
+  z-index: 1;
+  text-align: center;
+  line-height: 40px;
+}
+/* line 106, ../sass/msync-admin.scss */
+#marketo-form-canvas .mkto_field .dummy-input.dummy-input-checkbox {
+  width: 15px;
+  height: 15px;
+}
+/* line 110, ../sass/msync-admin.scss */
+#marketo-form-canvas .mkto_field .dummy-input.dummy-input-radio {
+  width: 15px;
+  height: 15px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 116, ../sass/msync-admin.scss */
+#marketo-form-canvas .mkto_field .dummy-input.dummy-input-hidden {
+  border: 2px dotted #ddd;
+  background: #f3f3f3;
+}
+/* line 121, ../sass/msync-admin.scss */
+#marketo-form-canvas .mkto_field:hover {
+  border: 1px dotted #d54e21;
+}
+/* line 123, ../sass/msync-admin.scss */
+#marketo-form-canvas .mkto_field:hover .delete_control {
+  display: inline;
+}
+/* line 127, ../sass/msync-admin.scss */
+#marketo-form-canvas .mkto_field.active-field {
+  background: #746FAF;
+  color: #FFF;
+}
+/* line 130, ../sass/msync-admin.scss */
+#marketo-form-canvas .mkto_field.active-field .delete_control {
+  display: inline;
+}
+/* line 134, ../sass/msync-admin.scss */
+#marketo-form-canvas .mkto_field.field-updated {
+  -webkit-animation: pulsate 1s ease-out;
+  -moz-animation: pulsate 1s ease-out;
+  -o-animation: pulsate 1s ease-out;
+  animation: pulsate 1s ease-out;
+}
+/* line 141, ../sass/msync-admin.scss */
+#marketo-form-canvas .mkto_field.required label:after {
+  content: '*';
+  color: red;
+  margin-left: 5px;
+}
+/* line 147, ../sass/msync-admin.scss */
+#marketo-form-canvas .mkto_field .delete_control {
+  display: none;
+  line-height: 32px;
+  margin-left: 10px;
+  background: #d54e21;
+  color: #FFF;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* line 159, ../sass/msync-admin.scss */
+.mkto_field_setting, .mkto_form_setting {
+  margin: 5px 0;
+  padding-left: 105px;
+  position: relative;
+}
+/* line 163, ../sass/msync-admin.scss */
+.mkto_field_setting label, .mkto_form_setting label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+  text-align: right;
+}
+/* line 170, ../sass/msync-admin.scss */
+.mkto_field_setting input[type=text], .mkto_field_setting textarea, .mkto_form_setting input[type=text], .mkto_form_setting textarea {
+  display: block;
+  width: 100%;
+}
+
+/* line 176, ../sass/msync-admin.scss */
+.mkto-publishing-actions {
+  background: #f5f5f5;
+  border-top: 1px solid #ddd;
+  clear: both;
+  padding: 10px;
+  margin: 12px -12px -12px -12px;
+}
+/* line 182, ../sass/msync-admin.scss */
+.mkto-publishing-actions .publishing-action {
+  float: right;
+  line-height: 23px;
+  text-align: right;
+}
+/* line 187, ../sass/msync-admin.scss */
+.mkto-publishing-actions .button {
+  float: right;
+}
+
+/* line 193, ../sass/msync-admin.scss */
+#followup .followup-wrapper {
+  display: none;
+}
+/* line 195, ../sass/msync-admin.scss */
+#followup .followup-wrapper.active {
+  display: block;
+}
+
+@-webkit-keyframes pulsate {
+  0% {
+    background: #7AD03A;
+  }
+  100% {
+    background: #746FAF;
+  }
+}
+@-moz-keyframes pulsate {
+  0% {
+    background: #7AD03A;
+  }
+  100% {
+    background: #746FAF;
+  }
+}
+@-o-keyframes pulsate {
+  0% {
+    background: #7AD03A;
+  }
+  100% {
+    background: #746FAF;
+  }
+}
+@keyframes pulsate {
+  0% {
+    background: #7AD03A;
+  }
+  100% {
+    background: #746FAF;
+  }
+}
