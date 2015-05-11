@@ -1,4 +1,4 @@
-=== mSync ===
+=== MSync ===
 
 Contributors: magiclogix
 Donate link: http://magiclogix.com/
