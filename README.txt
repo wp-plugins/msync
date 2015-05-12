@@ -1,6 +1,6 @@
 === MSync ===
 
-Contributors: magiclogix
+Contributors: magiclogix, stimalsina
 Donate link: http://magiclogix.com/
 Tags: forms, marketo, marketing automation, integration, analytics, tracking
 Requires at least: 3.0.1
