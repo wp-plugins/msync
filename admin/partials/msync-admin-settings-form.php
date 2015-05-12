@@ -13,7 +13,7 @@
 
 <div class="wrap">
   <h2>Setup Marketo</h2>
-  <p>You can get these settings from your Marketo Instance. Visit <strong>Admin</strong> &gt; <strong>Web Services</strong> on your Marketo Instance.</p>
+  <p>You can get these settings from your Marketo Instance. Visit <strong>Admin</strong> &gt; <strong>Integration</strong> on your Marketo Instance.</p>
   <?php settings_errors('msync_notices'); ?>
   <form method="post" action="">
     <input type="hidden" name="msync_settings_save" value="true" />
@@ -26,20 +26,32 @@
             <p class="description">Copy <strong>Munchkin Account ID</strong> from the <strong>Munchkin</strong> tab.</p>
           </td>
         </tr>
+      </tbody>
+    </table>
+    <hr>
+    <p>For the next two settings, you need to create a new custom service. Please follow the tutorial <a href="http://developers.marketo.com/documentation/rest/custom-service/" target="_blank">Here</a></p>
+    <table class="form-table">
+      <tbody>
         <tr valign="top">
           <th scope="row"><label for="msync_client_id">Client ID</label></th>
           <td>
             <input name="msync[msync_client_id]" type="text" id="msync_client_id" value="<?php echo $msync_client_id; ?>" class="regular-text" placeholder="Client Secret" />
-            <p class="description">Copy <strong>Client ID</strong> from <strong>Web Services</strong> tab.</p>
+            <p class="description">Copy <strong>Client ID</strong> from <strong>Service Detail</strong></p>
           </td>
         </tr>
         <tr valign="top">
           <th scope="row"><label for="msync_client_secret">Client Secret</label></th>
           <td>
             <input name="msync[msync_client_secret]" type="text" id="msync_client_secret" value="<?php echo $msync_client_secret; ?>" class="regular-text" placeholder="Client Secret" />
-            <p class="description">Copy <strong>Client Secret</strong> from <strong>Web Services</strong> tab.</p>
+            <p class="description">Copy <strong>Client Secret</strong> from <strong>Service Detail</strong></p>
           </td>
         </tr>
+      </tbody>
+    </table>
+    <hr>
+    <p>Munchkin JS</p>
+    <table class="form-table">
+      <tbody>
         <?php if($plugin_ready):?>
           <tr valign="top">
             <th scope="row"><label for="msync_tracking_code">Tracking Code Type</label></th>
