@@ -90,13 +90,17 @@ class MSync_Admin {
     add_menu_page('All Forms', 'mSync', 'manage_options', 'msync', array(&$this, 'display_msync_forms'), 'dashicons-welcome-widgets-menus', 91 );
     add_submenu_page('msync', 'mSync: All Forms', 'All Forms', 'manage_options', 'msync', array(&$this, 'display_msync_forms'));
     add_submenu_page('msync', 'mSync: Add New', 'Add New', 'manage_options', 'builder', array(&$this, 'display_msync_form_builder'));
-    add_submenu_page('msync', 'mSync: How it Works', 'About', 'manage_options', 'about', 'display_msync_about');
+    add_submenu_page('msync', 'mSync: How it Works', 'About', 'manage_options', 'about', array(&$this, 'display_msync_about'));
   }
 
   public function display_admin_form() {
     extract($this->get_settings());
     $plugin_ready = $this->is_plugin_ready();
     require(dirname( __FILE__ ) . '/partials/msync-admin-settings-form.php');
+  }
+
+  public function display_msync_about() {
+    require(dirname( __FILE__ ) . '/partials/msync-about.php');
   }
 
   /**
