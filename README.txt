@@ -30,7 +30,7 @@ It’s a simple process that allows you to take advanced actions on your lead da
 
 = Useful Links =
 
-* [Plugin's Homepage] (http://www.magiclogix.com/labs/)
+* [Plugin's Homepage] (http://www.magiclogix.com/labs/msync-for-wordpress)
 * [Plugin’s Support Link] (http://magiclogix.com/contact/)
 * [Developer Link] (https://launchpoint.marketo.com/magic-logix/906-marketing-automation-consulting-implementation-and-integration/)
 
